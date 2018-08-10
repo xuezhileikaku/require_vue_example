@@ -4,69 +4,26 @@
     <meta charset="utf-8"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
           type="text/css"/>
-    <link href="css/calculator.css" rel="stylesheet" type="text/css"/>
 
-    <!--<script data-main="js/app" defer async="true" src="js/lib/require.js"></script>-->
     <title></title>
+    <link href="css/site.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<!--计算器-->
-<!--<div>-->
-<!--<button id="calculator">计算器</button>-->
-<!--</div>-->
-<!--<div class="container">-->
-<!--<div id="CalCon" class="cal_container" tabindex="-1">-->
-<!--<div class="calculator">-->
-<!--<div id="CalTop" class="cal_close"><span id="CalCancel" class="cal-cancel"></span></div>-->
-<!--<div id="CalShow" class="cal_showarea" end="1" mem="0">0</div>-->
-<!--<div id="CalMidBtn" class="cal_btn_mid">-->
-<!--<a href="javascript:;" class="cal_btn_1">MR</a>-->
-<!--<a href="javascript:;" class="cal_btn_1">MC</a>-->
-<!--<a href="javascript:;" class="cal_btn_1">M+</a>-->
-<!--<a href="javascript:;" class="cal_btn_2">(</a>-->
-<!--<a href="javascript:;" class="cal_btn_4">)</a>-->
-<!--<a href="javascript:;" class="cal_btn">7</a>-->
-<!--<a href="javascript:;" class="cal_btn">8</a>-->
-<!--<a href="javascript:;" class="cal_btn">9</a>-->
-<!--<a href="javascript:;" class="cal_btn_2">÷</a>-->
-<!--<a href="javascript:;" class="cal_btn_3">C</a>-->
-<!--<a href="javascript:;" class="cal_btn">4</a>-->
-<!--<a href="javascript:;" class="cal_btn">5</a>-->
-<!--<a href="javascript:;" class="cal_btn">6</a>-->
-<!--<a href="javascript:;" class="cal_btn_2">x</a>-->
-<!--<a href="javascript:;" class="cal_btn_3">CE</a>-->
-<!--<a href="javascript:;" class="cal_btn">1</a>-->
-<!--<a href="javascript:;" class="cal_btn">2</a>-->
-<!--<a href="javascript:;" class="cal_btn">3</a>-->
-<!--<a href="javascript:;" class="cal_btn_2">-</a>-->
-<!--<a href="javascript:;" class="cal_btn_2">√</a>-->
-<!--<a href="javascript:;" class="cal_btn_2">±</a>-->
-<!--<a href="javascript:;" class="cal_btn">0</a>-->
-<!--<a href="javascript:;" class="cal_btn">.</a>-->
-<!--<a href="javascript:;" class="cal_btn_2">+</a>-->
-<!--<a href="javascript:;" class="cal_btn_1">=</a>-->
-<!--</div>-->
-<!--<div class="cal_but">Transfer Display</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
-
 <!--vue gre_exam-->
-<div id="header">
-    <header></header>
+<div class="wrap">
+    <div class="container">
+        <div id="header">
+            <ghead></ghead>
+        </div>
+        <div id="main">
+            <gcontent></gcontent>
+        </div>
+    </div>
+    <div id="footer">
+        <gfoot></gfoot>
+    </div>
 </div>
-<div id="main">
-    <content></content>
-</div>
-<div id="footer">
-    <footer></footer>
-</div>
+<script src="js/node_modules/requirejs/require.js" defer async="true" data-main="js/config.js"></script>
 
-
-<script src="js/node_modules/requirejs/require.js" defer async="true" data-main="js/script.js"></script>
-<!--<script src="js/node_modules/vue/dist/vue.js"></script>-->
-<!--<script src="js/vue-modheader.jsr.js"></script>-->
-<!--<script src="js/vue-modfooter.jsr.js"></script>-->
 </body>
 </html>
